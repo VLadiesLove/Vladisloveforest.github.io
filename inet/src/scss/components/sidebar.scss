@@ -1,0 +1,55 @@
+.sidebar{
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 100vh;
+    background:#031627;
+    width: 75px;
+
+    &__open{
+
+        &-button{
+            padding: 20px 32px 20px 28px;
+        }
+    }
+    &__button{
+        padding: 15px 0px 16px 28px;
+
+        img{
+            width: 15px;
+        }
+
+    }
+
+    &__category:active{
+        background-color:#f8fafb;
+    }
+
+    &__logo-small{
+        width: 75px;
+        height: 71px;
+        background-color: #0a7fff;
+        padding: 27px 18.4px 26px 18px;
+
+        img{
+            width: 39px;
+            height:18px ;
+        }
+    }
+
+    &__category{
+        height: 46px;
+
+        img{
+            width: 15px;
+        }
+    }
+
+    &__category_active{
+        background-color:#f8fafb;
+
+    }
+}
