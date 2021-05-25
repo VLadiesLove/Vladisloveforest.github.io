@@ -1,0 +1,25 @@
+.load-button-container{
+    // border-top: 1px solid #f1f5fc;
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+.button-load{
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #0d7dff;
+}
+
+.load-button-container{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    .load-button-container{
+        display: block;
+    }
+}    

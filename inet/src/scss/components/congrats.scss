@@ -109,9 +109,35 @@
             color: #0d7dff;
         }
     }
+
 }
 
 .congrats-item:hover{
     background-color: rgba(10, 127, 255, 0.1);
     cursor: pointer;
 }
+
+@media screen and (max-width:767px){
+    
+    .congrats{
+        height: auto;
+        .congrats__header{
+            display: none;
+    
+        }
+        &__today{
+            display: none;
+        }
+
+        &__upcoming{
+            display: none;
+        }
+    }
+
+}
+
+// @media screen and (max-width:767px){
+//     .congrats-item:last-child{
+//         border-bottom: none;
+//     }
+// }

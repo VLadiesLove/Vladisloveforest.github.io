@@ -1,4 +1,5 @@
 .sidebar{
+
     position:fixed;
     display: flex;
     flex-direction: column;
@@ -8,7 +9,8 @@
     height: 100vh;
     background:#031627;
     width: 75px;
-
+    ///////
+    display: none;
     &__open{
 
         &-button{
@@ -16,17 +18,26 @@
         }
     }
     &__button{
-        padding: 15px 0px 16px 28px;
-
+        width: 49px;
+        padding: 15px 10px 15px 15px;
+        margin-left: 13px;
+        margin-right: 13px;
+        border-bottom: 1px solid rgba(104, 144, 179, 0.17);
         img{
             width: 15px;
         }
 
     }
 
+///temp class for checkout active ref
+
     &__category:active{
         background-color:#f8fafb;
     }
+
+    &__category:hover .dropdown-menu{display: block;}
+    
+////
 
     &__logo-small{
         width: 75px;
@@ -42,7 +53,7 @@
 
     &__category{
         height: 46px;
-
+        
         img{
             width: 15px;
         }
@@ -51,5 +62,33 @@
     &__category_active{
         background-color:#f8fafb;
 
+    }
+}
+
+.dropdown-menu{
+    position: absolute;
+    z-index: 500;
+    top: 71px;
+    left: 75px;
+    color: #fff;
+    width: 240px;
+    height: 100vh;
+    background-color: #031627;
+    display: none;
+
+    .content{
+        margin: 0px 10px;
+        padding-top: 13px;
+        padding-left: 9px;
+        width: 220px;
+        height: 45px;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #b6bfca;
+        border-bottom: 1px solid rgba(104, 144, 179, 0.17);  
+    }
+
+    .content:hover{
+        text-decoration: underline;
     }
 }

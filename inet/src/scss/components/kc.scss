@@ -1,0 +1,29 @@
+.kc{
+    display: flex;
+    align-items:center;
+    padding-left: 25px;
+    background: url('../images/kc-bg.png') no-repeat;
+    background-size: cover;
+    width: 298px;
+    height: 199px;
+
+    &__text{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 34px;
+        font-weight: 900;
+        line-height: normal;
+        color: #ffffff;
+    }
+}
+
+
+@media screen and (max-width:767px){
+    .kc{
+        width: 360px;
+        height: 203px;
+        margin:0px auto;
+        align-self: center;
+        
+    }
+}

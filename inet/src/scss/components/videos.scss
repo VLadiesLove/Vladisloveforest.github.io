@@ -61,3 +61,15 @@
         object-fit: contain;
     }
 }
+
+@media screen and (max-width:1360px){
+    .videos{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1360px){
+    .all-videos{
+        display: none;
+    }
+}
